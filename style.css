@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.nav-main{
+    height: 100vh;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/mainGif.gif');
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 2.4rem;
+}
+span{
+    color: #ea1538;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.0rem;
+}
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+}
+
+.main{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,800px));
+    background-color:black;
+}
+img{
+    object-fit: cover;
+    object-position: center;
+
+}
+.front-text{
+    color: white;
+    position: absolute; /* or absolute */
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+.front-name{
+    font-size: 4vw;
+}
+.front-occupation{
+    font-size: 3.5vw;
+    text-align: center;
+}
+#carouselExampleIndicators{
+    height: 100vh;
+}
+.carousel-item img{
+    border: 100px solid rgb(95, 17, 148);
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(108, 117, 133);
+    object-fit:fill;
+}
